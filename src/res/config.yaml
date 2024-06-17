@@ -1,0 +1,9 @@
+n_iter: 5
+n_particles: 10
+timestamp: 0.5
+run_graphing: true
+run_plotting: true
+simulation_properties:
+- diffusion_coef: 3
+- scenario_name: "turbulence-free"
+- alpha: 0.666666667

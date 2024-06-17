@@ -1,6 +1,7 @@
 import numpy as np
 import scipy
 import random
+import yaml
 
 #variables
 already_generated_colors = []
@@ -36,3 +37,11 @@ def random_generate_color():
         random_generate_color()
 
     return (r, g, b)
+
+def read_config(path):
+    with open(path) as stream:
+        try:
+            return yaml.safe_load(stream)
+        except yaml.YAMLError as exc:
+            print(exc)
+            exit(1)

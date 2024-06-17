@@ -21,7 +21,8 @@ class GraphicsObject:
 
     def show_loop(self):
         cv2.imshow("graphics", self.map)
-        cv2.waitKey(0)
+        if cv2.waitKey(0) == ord('q'):
+            exit(0)
 
 class PlottingObject:
     pass

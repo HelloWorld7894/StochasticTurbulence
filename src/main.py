@@ -1,15 +1,13 @@
 from scenarios import Scenario
+from utils import read_config
+import argparse
 
-#some settings (TODO, rewrite them into config?)
-N_ITER = 5
-N_PARTICLES = 2
-TIMESTAMP = 1
-DIFFUSION_COEF = 3
-SCENARIO_NAME = "turbulence-free"
-ALPHA = 2/3 #to simulate turbulent environment
-RUN_GRAPHING = True
-RUN_PLOTTING = True
+parser = argparse.ArgumentParser()
+parser.add_argument("-c", "--config")
 
 #sim
 if __name__ == "__main__":
-    Scenario([N_ITER, N_PARTICLES, TIMESTAMP, DIFFUSION_COEF, ALPHA, SCENARIO_NAME, RUN_GRAPHING, RUN_PLOTTING])
+    args = parser.parse_args()
+    config_file = read_config(args.config)
+
+    Scenario(config_file)
