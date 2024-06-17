@@ -2,6 +2,7 @@ import numpy as np
 import scipy
 import random
 import yaml
+import math
 
 #variables
 already_generated_colors = []
@@ -38,6 +39,15 @@ def random_generate_color():
 
     return (r, g, b)
 
+def calculate_dist(particles):
+    x0 = particles[0].position[0]
+    y0 = particles[0].position[1]
+
+    x1 = particles[1].position[0]
+    y1 = particles[1].position[1]
+
+    return math.sqrt(abs(x0 - x1) ** 2 + abs(y0 - y1) ** 2)
+    
 def read_config(path):
     with open(path) as stream:
         try:
