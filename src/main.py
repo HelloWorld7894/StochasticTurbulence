@@ -1,4 +1,5 @@
 from scenarios import Scenario
+from vis import GraphicsObject, PlottingObject
 
 #some settings (TODO, rewrite them into config?)
 N_ITER = 5
