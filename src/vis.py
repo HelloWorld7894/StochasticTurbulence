@@ -2,10 +2,15 @@
 All visualisations are done in OpenCV (TODO: migrate to PyGame)
 """
 
+import time
+
 import cv2
 import numpy as np
 import matplotlib
+matplotlib.use('TkAgg')
+
 import math
+import matplotlib.pyplot as plt
 
 class GraphicsObject:
     def __init__(self, map_size = 1000, block = True, timestamp = 1):
@@ -34,5 +39,26 @@ class GraphicsObject:
     def erase(self):
         self.map = np.full((self.map_size, self.map_size, 3), (255, 255, 255), dtype=np.uint8)
 
+
 class PlottingObject:
-    pass
+    def __init__(self):
+        pass
+
+    def plot_points(self, points):
+        plt.plot(points[0], points[1])
+        plt.show()
+
+    def show(self):
+        plt.show()
+
+    def close(self):
+        plt.close()
+
+if __name__ == "__main__":
+    plot_obj = PlottingObject()
+    plot_obj.show()
+
+    xpoints = np.array([0, 6, 12])
+    ypoints = np.array([0, 250, 125])
+
+    plot_obj.plot_points([xpoints, ypoints])

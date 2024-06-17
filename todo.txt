@@ -1,0 +1,5 @@
+1) Grafování distances
+2) Mirroring + determinace krabice
+3) Grafování distances tak aby to směrnice byla log času (odmoc. ze 3)
+4) Basics LaTeX prezentace?
+5) Basics sborníku?
