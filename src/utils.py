@@ -55,3 +55,13 @@ def read_config(path):
         except yaml.YAMLError as exc:
             print(exc)
             exit(1)
+
+def rad_to_deg(radians):
+    """Convert radians to degrees."""
+    degrees = radians * (180 / math.pi)
+    return degrees
+
+def deg_to_rad(degrees):
+    """Convert degrees to radians."""
+    radians = degrees * (math.pi / 180)
+    return radians

@@ -23,6 +23,11 @@ class GraphicsObject:
         for particle in particles:
             cv2.circle(self.map, (round(particle.position[0]), round(particle.position[1])), 8, color=particle.color, thickness=-1)
 
+    def update_position(self, coords):
+        cv2.drawMarker(self.map, coords, color=[0, 0, 255], thickness=1, 
+        markerType= cv2.MARKER_TILTED_CROSS, line_type=cv2.LINE_AA,
+        markerSize=5)
+
     def show(self):
         cv2.imshow("graphics", self.map)
         if self.block:
