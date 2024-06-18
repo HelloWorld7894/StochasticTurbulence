@@ -8,6 +8,6 @@ simulation_properties:
 - diffusion_coef: 3
 - scenario_name: "turbulence-box"
 - alpha: 0.666666667
-- particle_speed: [5, 5]
+- particle_speed: [0, 0]
 - default_coords: [50, 50]
-- box_size: [50, 50]
+- box_size_max: [100, 100]

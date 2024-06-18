@@ -58,6 +58,7 @@ class Scenario:
 
         self.distances = []
 
+    def run(self):
         # Run simulation
         for i in range(self.n_iter):
             self.regenerate_particles()
@@ -80,10 +81,14 @@ class Scenario:
             #if self.plotting:
                 #render plots
 
+        distance_all = sum(self.distances) / len(self.distances)
+
         print("Done!")
         print("Distance: " + str(sum(self.distances) / len(self.distances)))
         if self.graphing:
             self.gui_obj.show_loop()
+
+        return distance_all
 
     def regenerate_particles(self):
         self.particles = []
@@ -99,6 +104,7 @@ class Scenario:
     def turbulence_free(self, distance, particles):
         self.distances.append(distance)
     def turbulence_in_box(self, distance, particles):
+        #TODO: rework to a version that does not throw particles away but calculates it
         diff_x = abs(particles[0].position[0] - particles[1].position[0])
         diff_y = abs(particles[0].position[1] - particles[1].position[1])
 
@@ -108,3 +114,10 @@ class Scenario:
             return
 
         self.distances.append(distance)
+
+class BoxApproximation(Scenario):
+    def __init__(self, args):
+        super().__init__(args)
+
+    def run_approx(self):
+        self.run()

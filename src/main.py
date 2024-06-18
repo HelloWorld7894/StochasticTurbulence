@@ -1,4 +1,4 @@
-from scenarios import Scenario
+from scenarios import Scenario, BoxApproximation
 from utils import read_config
 import argparse
 
@@ -10,4 +10,10 @@ if __name__ == "__main__":
     args = parser.parse_args()
     config_file = read_config(args.config)
 
-    Scenario(config_file)
+    #Type 1
+    #scenario = Scenario(config_file)
+    #scenario.run()
+
+    #Type 2    
+    scenario = BoxApproximation(config_file)
+    scenario.run()
