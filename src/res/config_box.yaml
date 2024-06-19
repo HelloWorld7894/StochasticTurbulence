@@ -1,13 +1,15 @@
-n_iter: 100
+n_sim: 10
+n_iter: 15
 n_particles: 2
 timestamp: 0.1
 run_graphing: true
 run_plotting: true
 nonblocking_graphing: true
+map_size: 1000
 simulation_properties:
 - diffusion_coef: 3
 - scenario_name: "turbulence-box"
 - alpha: 0.666666667
-- particle_speed: [5, 5]
+- particle_speed: [10, 10]
 - default_coords: [50, 50]
-- box_size: [50, 50]
+- box_size: [30, 30]

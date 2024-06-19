@@ -65,3 +65,7 @@ def deg_to_rad(degrees):
     """Convert degrees to radians."""
     radians = degrees * (math.pi / 180)
     return radians
+
+def calculate_richardson_ratio(mean_distance, mean_time):
+    ratio = (mean_distance ** 2) / (mean_time ** 3)
+    return ratio

@@ -1,4 +1,5 @@
-n_iter: 100
+n_sim: 20
+n_iter: 50
 n_particles: 2
 timestamp: 0.1
 run_graphing: true

@@ -11,9 +11,9 @@ if __name__ == "__main__":
     config_file = read_config(args.config)
 
     #Type 1
-    #scenario = Scenario(config_file)
-    #scenario.run()
+    scenario = Scenario(config_file)
+    scenario.run()
 
     #Type 2    
-    scenario = BoxApproximation(config_file)
-    scenario.run()
+    #scenario = BoxApproximation(config_file)
+    #scenario.run()
