@@ -5,5 +5,5 @@ Projekt na Týdnu vědy na Jaderce 2024 ohledně stochastického modelování tu
 ### NOTE: repozitář je rozdělení na 2 sekce (*deprecated* - obsahuje starší algoritmy a *main* - obsahuje novější změny kódu)
 
 ## Odkazy
-**Odkaz na prezentaci: [Github](https://github.com/HelloWorld7894/StochasticTurbulence/tree/main/docs/StochastickeModelovani.pdf)**
+**Odkaz na prezentaci: [Github](https://github.com/HelloWorld7894/StochasticTurbulence/tree/main/docs/StochastickeModelovani.pdf)** <br>
 **Odkaz na sborníkový příspěvek: [Github](https://github.com/HelloWorld7894/StochasticTurbulence/tree/main/docs/StochastickeModelovani_prezentace.pdf)**
