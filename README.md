@@ -13,9 +13,9 @@ Projekt na Týdnu vědy na Jaderce 2024 ohledně stochastického modelování tu
 | D           | 3           |
 | alpha       | 2/3         |
 
-**N_sim** - počet simulací v programu
-**N_i** - počet iterací v jedné simulaci
-**D** - diffuzní koeficient, (musí platit *D > 0*)
+**N_sim** - počet simulací v programu <br>
+**N_i** - počet iterací v jedné simulaci <br>
+**D** - diffuzní koeficient, (musí platit *D > 0*) <br>
 **alpha** - proměnná určující chování prostředí (*2/3 je přesně dané pro turbulentní prostředí*)
 
 ## Odkazy
